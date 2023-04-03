@@ -481,8 +481,8 @@ void listenClients(std::vector<int> clientFd, std::vector<pid_t> clientPid, int 
 				childReport = true;
 			}
 
-		if (FD_ISSET(tempHandle, &waitHandles))
-			updateTemps(tempHandle, &clientTemp);
+		//if (FD_ISSET(tempHandle, &waitHandles))
+			//updateTemps(tempHandle, &clientTemp);
 		
 		// Resetting the listeners
 		FD_ZERO(&waitHandles);
